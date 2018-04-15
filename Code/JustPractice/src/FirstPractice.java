@@ -12,7 +12,7 @@ class HelloMachine implements Hello{
 	}
 }
 
-public class AnotherPractice {
+public class FirstPractice {
 
 	public static void main (String[] args) {
 		Hello hello = new HelloMachine();
