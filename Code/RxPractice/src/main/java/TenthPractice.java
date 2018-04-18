@@ -12,7 +12,7 @@ public class TenthPractice {
 		Single<String> si = Single.fromObservable(ob);
 		si.subscribe(System.out::println);
 		
-		String[] array = {"Hello", "Hu", "sadjk"};
+		String[] array = {"Hello", "Hu", "sadjk"}; // 오류 발생 Single은 한개의 데이터만을 발행하고 끝냄 onNext호출 불가함
 		Observable.fromArray(array).single("Hello World").
 		subscribe(System.out::println);
 	}
