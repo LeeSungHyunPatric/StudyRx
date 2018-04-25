@@ -12,13 +12,13 @@ public class GuGuDan {
 		String a = sc.nextLine();
 		
 		Function<Integer, Observable<Integer>> fc = num -> {
-				Observable<Integer> ob = Observable.range(1, 9)
+				return Observable.range(1, 9)
 						.map(it -> it*num);
-				return ob;
 		};
 		
-			Observable.range(1, 9)
+		Observable.range(1, 9)
 			.flatMap(fc)
 			.subscribe(System.out::println);
+		
 	}
 }
